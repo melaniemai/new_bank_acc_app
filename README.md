@@ -1,4 +1,5 @@
-**Goal: Create an application that can handle new customer bank account requests.**
+## Goal: Create an application that can handle new customer bank account requests.
+
 <br>
 <br>
 The application will read a .csv file that contains the:
