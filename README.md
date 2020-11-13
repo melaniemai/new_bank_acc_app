@@ -25,3 +25,12 @@ It should be noted that savings account holders are given a safety deposit box t
 
 - Savings accounts use .25 point less than base rate
 - Checking accounts use 15% of base rate
+
+## Objectives.
+
+- Develop robust application architecture
+- Abstract classes and abstract methods
+- Use of interface API to receive info from a developer's application
+- Access modifiers
+- Read and store data from a file
+- Work with String API
