@@ -1,5 +1,9 @@
 public class BankAccountApp {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Checking checkingAccount = new Checking("Tom Wilson");
+
+        // Read .cvs file
+
+        // Create new accounts based on data
     }
 }
