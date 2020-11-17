@@ -4,8 +4,8 @@ public class Savings extends Account {
     int safetyDepBoxKey;
 
     // Constructor, initialize settings for savings properties
-    public Savings(String name) {
-        super(name);
+    public Savings(String name, String sSN, double initDep) {
+        super(name, sSN, initDep);
         System.out.println("New savings account");
     }
 

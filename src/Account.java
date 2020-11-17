@@ -9,9 +9,11 @@ public abstract class Account implements IBaseRate {
     double rate;
 
     // Constructor, initialize account
-    public Account(String name) {
-        System.out.println("ACCOUNT HOLDER: " + name);
-        System.out.print("NEW ACCOUNT: ");
+    public Account(String name, String sSN, double initDep) {
+        this.name = name;
+        this.ssn = sSN;
+        balance = initDep;
+        System.out.println("NAME: " + name + " SSN: " + sSN + " BALANCE: $" + balance);
     }
 
     // Common methods
