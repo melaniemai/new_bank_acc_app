@@ -20,8 +20,6 @@ public abstract class Account implements IBaseRate {
         // Account number
         index++;
         this.accountNum = setAccountNum();
-        System.out.println("ACCOUNT NUMBER: " + this.accountNum);
-
     }
 
     private String setAccountNum() {
