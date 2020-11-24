@@ -4,7 +4,10 @@ public class BankAccountApp {
         Savings savingsAccount = new Savings("Suzy Low", "796821570", 2500);
 
         savingsAccount.showInfo();
+        System.out.println("***********");
         checkingAccount.showInfo();
+
+        savingsAccount.deposit(3000);
 
         // Read .cvs file
 

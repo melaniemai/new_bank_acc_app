@@ -20,7 +20,11 @@ public abstract class Account implements IBaseRate {
         // Account number
         index++;
         this.accountNum = setAccountNum();
+
+        setRate();
     }
+
+    public abstract void setRate();
 
     private String setAccountNum() {
         String lastTwoSSN = ssn.substring(ssn.length() - 2, ssn.length());
@@ -34,5 +38,29 @@ public abstract class Account implements IBaseRate {
         System.out.println("NAME: " + name);
         System.out.println("ACCOUNT NUMBER: " + accountNum);
         System.out.println("ACCOUNT BALANCE: $" + balance);
+        System.out.println("Rate: " + rate + "%");
     }
+
+    public void deposit(double amount) {
+        balance += amount;
+        System.out.println("Depositing $" + amount + " to your account...");
+        printBal();
+    }
+
+    public void withdraw(double amount) {
+        balance -= amount;
+        System.out.println("Withdrawing $" + amount + " from your account...");
+        printBal();
+    }
+
+    public void transfer(String destination, double amount) {
+        balance -= amount;
+        System.out.println("Transfering $" + amount + " to " + destination + "...");
+        printBal();
+    }
+
+    public void printBal() {
+        System.out.println("Your balance is now: $" + balance);
+    }
+
 }
